@@ -1,0 +1,15 @@
+{
+    "python.defaultInterpreterPath": "C:\\Python312\\python.exe",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./myenv",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "."
+    ]
+}
