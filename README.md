@@ -45,18 +45,18 @@ Designed with **scalable microservices principles**, the system can be container
 
 ---
 
-### ⚙️ Features
+###  Features
 
-✅ **Document Ingestion** – Upload or load domain documents (PDF, TXT, CSV).
-✅ **Vector Store Indexing** – Store embeddings using FAISS or Chroma for fast retrieval.
-✅ **Contextual Q&A** – Ask domain-specific questions and get concise, source-aware answers.
-✅ **API Endpoint** – Expose a `/query` endpoint via FastAPI for external integration.
-✅ **Configurable Models** – Easily switch between OpenAI, Hugging Face, or local models.
-✅ **Scalable & Deployable** – Dockerized for deployment on any cloud (AWS, GCP, Azure).
+ **Document Ingestion** – Upload or load domain documents (PDF, TXT, CSV).
+ **Vector Store Indexing** – Store embeddings using FAISS or Chroma for fast retrieval.
+ **Contextual Q&A** – Ask domain-specific questions and get concise, source-aware answers.
+ **API Endpoint** – Expose a `/query` endpoint via FastAPI for external integration.
+ **Configurable Models** – Easily switch between OpenAI, Hugging Face, or local models.
+ **Scalable & Deployable** – Dockerized for deployment on any cloud (AWS, GCP, Azure).
 
 ---
 
-### 🧰 Tech Stack
+###  Tech Stack
 
 | Component                     | Technology                                           |
 | ----------------------------- | ---------------------------------------------------- |
@@ -71,9 +71,9 @@ Designed with **scalable microservices principles**, the system can be container
 
 ---
 
-### 🧪 Quick Start
+###  Quick Start
 
-#### 1️⃣ Clone Repository
+#### 1️ Clone Repository
 
 ```bash
 git clone https://github.com/ManibalaSinha/OpenAI.git
@@ -81,7 +81,7 @@ cd OpenAI
 git checkout feature_branch
 ```
 
-#### 2️⃣ Create Virtual Environment
+#### 2️ Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -89,7 +89,7 @@ source venv/bin/activate   # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
 
-#### 3️⃣ Add Environment Variables
+#### 3️ Add Environment Variables
 
 Create a `.env` file:
 
@@ -98,13 +98,13 @@ OPENAI_API_KEY=your_api_key_here
 VECTOR_DB=chroma   # or faiss
 ```
 
-#### 4️⃣ Run the Server
+#### 4️ Run the Server
 
 ```bash
 uvicorn main:app --reload
 ```
 
-#### 5️⃣ Query the API
+#### 5️ Query the API
 
 ```bash
 curl -X POST "http://127.0.0.1:8000/query" \
@@ -114,7 +114,7 @@ curl -X POST "http://127.0.0.1:8000/query" \
 
 ---
 
-### 🧮 Example Use Cases
+###  Example Use Cases
 
 * **Energy Operations:** Ask about well files, safety manuals, or regulatory filings.
 * **Industrial Applications:** Query process documents or equipment SOPs.
@@ -122,7 +122,7 @@ curl -X POST "http://127.0.0.1:8000/query" \
 
 ---
 
-### 📦 Deployment
+###  Deployment
 
 **Docker Build**
 
@@ -139,7 +139,7 @@ kubectl apply -f k8s/deployment.yaml
 
 ---
 
-### 🧠 Future Enhancements
+###  Future Enhancements
 
 * Integrate **Milvus / OpenSearch** for enterprise-scale retrieval
 * Add **GPU inference optimization** via **VLLM** or **TensorRT**
@@ -153,8 +153,3 @@ kubectl apply -f k8s/deployment.yaml
 **Manibala Sinha**
 🔗 [LinkedIn](https://www.linkedin.com/in/manibalasinha) | [GitHub](https://github.com/ManibalaSinha) | [Blog](https://devstations.blogspot.com)
 
----
-
-Would you like me to include a **section showing example FastAPI routes (`/ingest`, `/query`)** with sample Python code so recruiters can quickly see it’s real backend logic? That helps make it look more production-grade for GenAI hiring managers.
-
-'''
